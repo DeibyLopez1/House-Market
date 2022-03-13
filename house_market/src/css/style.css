@@ -1,0 +1,441 @@
+:root{
+	--fuenteHeading:  'Work Sans', sans-serif;
+	--fuenteParrafos: 'Open Sans', sans-serif;
+
+	--primario: #C00000;
+	--secundario: #D84848;
+	--focus: #33DFAC;
+	--blanco: #ffffff;
+	--negro: #000000;
+	--gris: #edede9;
+
+}
+
+html{
+	box-sizing: border-box;
+	font-size: 62.5%;
+
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body{
+	font-family: var(--fuenteParrafos);
+	font-size: 1.6rem;
+	line-height: 2;
+}
+
+/** GLOBALES **/
+
+.contenedor{
+	max-width: 1200px;
+	width: 90%;
+	/**width: min(90%, 1200px); esto es lo mismo que arriba**/ 
+	margin: 0 auto;
+}
+
+a{
+	text-decoration: none;
+}
+
+h1,h2,h3,h4{
+	font-family: var(--fuenteHeading);
+	line-height: 1.2rem;
+}
+
+h1{
+	font-size: 4.8rem;
+}
+
+h2{
+	font-size: 4.0rem;
+}
+
+h3{
+	font-size: 3.2rem;
+}
+
+h4{
+	font-size: 2.8rem;
+}
+
+img{
+	max-width: 100%;
+}
+
+label{
+	font-family: 'Roboto Slab', serif;
+}
+
+p{
+	font-family: 'Roboto Slab', serif;
+}
+
+/**Utilidades **/
+
+.row{
+	display: flex;
+	flex-direction: row;
+}
+.active{
+	color: var(--primario);
+	text-decoration: underline;
+}
+
+.texto-blanco{
+	color: var(--blanco);
+}
+
+.texto-primario{
+	color: var(--primario);
+}
+
+.div__linea--separador{
+	width: 80%;
+	height: 0px;
+	margin-left: 10%;
+	border-style: solid;
+	border-color: var(--gris);
+	border-width: 1px;
+	margin-top: 60px;
+
+}
+
+.no-margin{
+	margin: 0;
+}
+
+.no-padding{
+	padding: 0;
+}
+
+.centrar-texto{
+	text-align: center;
+}
+
+.row-space{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.margin__left--15{
+	margin-left: 15px;
+}
+.boton{
+	display: block;
+	width: 200px;
+	font-family: var(--fuenteHeading);
+	text-align: center;
+	padding: 1rem 3rem;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	border-radius: 50px;
+}
+
+.boton--primario{
+	color: var(--blanco);
+	background-color: var(--primario);
+}
+
+.boton--secundario{
+	color: var(--primario);
+	background-color: var(--blanco);
+}
+
+.espacio-30heig-100wid{
+	width: 100%;
+	height: 30px;
+}
+
+/* HEADER */
+
+.header{
+	background-color: var(--primario);
+	height: 130px;
+	margin-bottom: 0px;
+}
+
+.header-contenedor{
+	display: flex;
+	flex-direction: column;
+}
+
+.header-informacion{
+	display: flex;
+	flex-direction: row;
+	border-bottom: solid;
+	border-color: var(--blanco);
+	border-width: 2px;
+}
+
+.header-informacion__logo{
+	height: 70px;
+}
+
+.header-informacion__opciones{
+	display: flex;
+	flex-direction: row;
+	width: 40%;
+	justify-content: space-between;
+	text-align: center;
+	margin-left: 500px;
+}
+
+.header-informacion__opciones--contacto, 
+.header-informacion__opciones--login, 
+.header-informacion__opciones--buscarIcon{
+	margin-top: 20px;
+}
+
+.header-informacion__opciones--login a{
+	color: var(--blanco);
+}
+
+.header-filtros{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
+	margin-top: 10px;
+}
+
+.header-filtros a {
+	color: var(--blanco);
+	font-size: 20px;
+	text-align: center;
+	font-weight: 700;
+}
+
+/*BANNER INICIO*/
+.Banner_inicio{
+	background-image: url(../data/img/banner_tegucigalpa_1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 355px;
+	width: 100%;
+	text-align: center;
+}
+
+.Banner_inicio__informacion{
+	padding-top: 45px;
+}
+
+.Banner_inicio__informacion h1,
+.Banner_inicio__informacion h4{
+	color: var(--blanco);
+	font-family: 'Playfair';
+	padding: 0px;
+}
+.Banner_inicio__informacion h1{
+	font-size: 70px;
+}
+
+.Banner_inicio__informacion a{
+	margin-left: 570px;
+	margin-top: 20px;
+}
+
+/* BUSCAR POR FILTROS INICIO  */
+.buscarXfiltros{
+	background-color: var(--gris);
+	height: 450px;
+}
+
+.buscarXfiltros__informacion{
+	padding-top: 45px;
+	text-align: center;
+}
+
+.buscarXfiltros__informacion h1{
+	color: var(--primario);
+	font-family: 'Playfair Display', serif;
+
+}
+
+.buscarXfiltros__form{
+	width: 80%;
+	margin-left: 10%;
+}
+
+.buscarXfiltros__formulario{
+	display: grid;
+	grid-template-columns: 2fr 2fr 0.5fr 0.5fr 1.5fr;
+	padding-top: 20px;
+}
+
+.buscarXfiltros__formulario--campo{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+}
+
+.buscarXfiltros__formulario--campo__input{
+	height: 35px;
+	text-align: center;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 0.5px;
+}
+
+.buscarXfiltros__formulario--boton{
+	margin-left: 380px;
+	margin-top: 45px;
+	text-align: left;
+	width: 320px;
+}
+
+/*SOBRE NOSOTROS INICIO*/
+
+.nosotros_inicio{
+	display: flex;
+	flex-direction: column;
+}
+
+.sobre-nosotros__contenido{
+	width: 86%;
+	margin-left: 7%;
+	display: grid;
+	grid-template-columns: 1.5fr 2fr;
+	padding-top: 35px;
+}
+
+.sobre-nosotros__contenido--logo{
+	height:85%;
+	margin-left: 25%;
+	width: 50%;
+}
+
+/* HABITACIONES Y APARTAMENTOS */
+
+.Catalogo_inicio{
+	background-color: var(--gris);
+	display: flex;
+	flex-direction: column;
+	height: 900px;
+}
+
+.Catalogo_inicio__contenido{
+	width: 90%;
+	margin-left: 5%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Catalogo_inicio__contenido--card{
+	
+	display: grid;
+	grid-template-rows: 1fr 0.5fr 0.5fr;
+	background-color: var(--blanco);
+	border-radius: 10px 10px 10px 10px ;
+	width: 90%;
+	margin-left: 5%;
+
+}
+
+.Catalogo_inicio__contenido--card__img{
+	border-radius: 10px 10px 0px 0px ;
+	overflow: hidden;
+}
+
+.Catalogo_inicio__contenido--card__ubicacion{
+	display: flex;
+	flex-direction: column;
+	border-bottom: solid;
+	border-radius: 0px 0px 0px 0px ;
+	border-style: solid;
+	border-width: 0.5px;
+	border-color: gray;
+	text-align: center;
+}
+
+.Catalogo_inicio__contenido--card__precio-Caracteristicas{
+	display: flex;
+	flex-direction: column;
+	border-radius: 0px 0px 10px 10px;
+	border-style: solid;
+	border-width: 0.5px;
+	border-color: gray;
+	text-align: center;
+}
+
+.Catalogo_inicio__contenido--card__ubicacion--ubi{
+	margin-left: 15px;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+.Catalogo_inicio__contenido--card__precio-Caracteristicas--carac,
+.caracteristicas-inicio-card__icono-nombre{
+	margin-left: 15px;
+}
+
+.Catalogo_inicio__contenido--card__precio--precio{
+	color: var(--primario);
+	margin-left: 45px;
+}
+
+.catalogo__inicio--boton{
+	margin-left: 520px;
+	width: 320px;
+	margin-top: 40px;
+}
+
+/* BANNER RECUENTO */
+
+.Banner-inicio-contacto{
+	background-image: url(../data/img/banner_tegucigalpa_2.jpg);
+	height: 250px;
+}
+
+.Banner-inicio-contacto__info{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	width: 80%;
+	margin-left: 10%;
+	padding-top: 20px;
+}
+
+.Banner-inicio-contacto__info--aviso{
+	margin-top: 45px;
+}
+
+.Banner-inicio-contacto__info--aviso h2{
+	color: var(--blanco);
+}
+
+.Banner-inicio-contacto__info--aviso h4{
+	color: var(--secundario);
+}
+
+.Banner-inicio-contacto__info--contacto h4{
+	color: var(--blanco);
+}
+
+/* INICIO GALERIA DE PA LA PAGINA DE INICIO */
+
+.Galeria-PageInicio{
+	background-color: var(--blanco);
+}
+
+.Galeria-PageInicio-Contenido{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	width: 90%;
+	margin-left: 5%;
+	padding-top: 50px;
+}
+
+.Galeria-PageInicio-Contenido__imgs{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.VistaPrev_Galeria_Fotos{
+	width: 95%;
+	overflow: hidden;
+	margin-right: 5%;
+	border-radius: 10px;
+}
