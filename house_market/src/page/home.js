@@ -1,8 +1,11 @@
 import React from 'react'
+import { Footer } from '../components/Footer/footer'
 import { Header } from '../components/Header/header'
 import { Catalogo_inicio } from '../components/home/Catalogo_inicio'
 import { FormBuscar } from '../components/home/FormBuscar'
+import { Galeria_Inicio } from '../components/home/Galeria_Inicio'
 import { Nosotros } from '../components/home/Nosotros'
+import { Direccion_empresa } from '../components/nosotros/Direccion_empresa'
 
 export const Home = () => {
   return (
@@ -36,7 +39,11 @@ export const Home = () => {
             </div>
         </div>
 
-   
+        <Galeria_Inicio />
+
+       <Direccion_empresa /> 
+
+        <Footer />
    </>
   )
 }

@@ -1,6 +1,7 @@
 :root{
 	--fuenteHeading:  'Work Sans', sans-serif;
 	--fuenteParrafos: 'Open Sans', sans-serif;
+	--playfair: 'Playfair Display', serif;
 
 	--primario: #C00000;
 	--secundario: #D84848;
@@ -84,6 +85,10 @@ p{
 	text-decoration: underline;
 }
 
+.fuente-playfair{
+	font-family: var(--playfair);
+}
+
 .texto-blanco{
 	color: var(--blanco);
 }
@@ -124,6 +129,13 @@ p{
 .margin__left--15{
 	margin-left: 15px;
 }
+
+.margin__bot--10{
+	margin-bottom: 10px;
+}
+
+
+
 .boton{
 	display: block;
 	width: 200px;
@@ -418,11 +430,12 @@ p{
 
 .Galeria-PageInicio{
 	background-color: var(--blanco);
+	height: 430px;
 }
 
 .Galeria-PageInicio-Contenido{
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 1.5fr 1fr;
 	width: 90%;
 	margin-left: 5%;
 	padding-top: 50px;
@@ -431,11 +444,103 @@ p{
 .Galeria-PageInicio-Contenido__imgs{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	
 }
 
 .VistaPrev_Galeria_Fotos{
 	width: 95%;
 	overflow: hidden;
 	margin-right: 5%;
-	border-radius: 10px;
 }
+
+.Galeria-PageInicio-Contenido__informacion{
+	display: flex;
+	flex-direction: column;
+}
+.Galeria-PageInicio-Contenido__informacion h2{
+	color: var(--primario);
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+}
+
+.Galeria-PageInicio-Contenido__informacion p{
+	margin-left: 20px;
+	font-weight: 500;
+}
+
+.GALERIA_INICIO__boton{
+	margin-top: 10px;
+	margin-left: 150px;
+}
+
+/* DIRECCION EMPRESA EN LA PAGINA DE INICIO */
+
+.Direccion-empresa{
+	background-color: var(--gris);
+	display: flex;
+	flex-direction: column;
+
+	height: 770px;
+}
+
+.Direccion-empresa-info{
+	padding-top: 50px;
+	text-align: center;
+}
+
+.Direccion-empresa-info h1{
+	color: var(--primario);
+	font-family: var(--playfair);
+}
+
+.Direccion-empresa-info p{
+	color: var(--secundario);
+}
+
+.Direccion-empresa-contenido{
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	width: 95%;
+	margin-left: 2.5%;
+}
+
+.Direccion-empresa-contenido__mapa{
+	width: 95%;
+	margin-right: 5%;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: var(--secundario);
+}
+
+.Direccion-empresa-contenido__info{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 45px;
+}
+
+.Direccion-empresa-contenido__casillainfo{
+	width: 95%;
+	margin-left: 5%;
+	display: flex;
+	flex-direction: column;
+}
+
+/*	CSS EN FOOTER */
+
+.footer{
+	background-color: var(--secundario);
+}
+
+.footer-contenido{
+	display: grid;
+	grid-template-columns: 1.5fr 1fr 1fr;
+}
+
+/* CSS PARA EL LOGIN */
+
+
+
+
+/* FIN CSS LOGIN */
