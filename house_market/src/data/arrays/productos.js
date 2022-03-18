@@ -23,6 +23,48 @@ const dbProductos = [
         img: apartamento1,
         ubicacion: "Edificio Fausto Hernandez",
         precio: "$1,500"
+    },
+    {
+        id:"4",
+        nombre: "Apartamentos",
+        img: apartamento1,
+        ubicacion: "Edificio Fausto Hernandez",
+        precio: "$1,500"
+    },
+    {
+        id:"5",
+        nombre: "Apartamentos",
+        img: apartamento1,
+        ubicacion: "Edificio Fausto Hernandez",
+        precio: "$1,500"
+    },
+    {
+        id:"6",
+        nombre: "Apartamentos",
+        img: apartamento1,
+        ubicacion: "Edificio Fausto Hernandez",
+        precio: "$1,500"
+    },
+    {
+        id:"7",
+        nombre: "Apartamentos",
+        img: apartamento1,
+        ubicacion: "Edificio Fausto Hernandez",
+        precio: "$1,500"
+    },
+    {
+        id:"8",
+        nombre: "Apartamentos",
+        img: apartamento1,
+        ubicacion: "Edificio Fausto Hernandez",
+        precio: "$1,500"
+    },
+    {
+        id:"9",
+        nombre: "Apartamentos",
+        img: apartamento1,
+        ubicacion: "Edificio Fausto Hernandez",
+        precio: "$1,500"
     }         
 ]
 

@@ -13,14 +13,10 @@ export const Catalogo_inicio = () => {
 
       <div className="Catalogo_inicio__contenido">
 
-        {
-            dbProductos.map( (element, index) => {
-                return <Vista_prev elemento={element} key={index} />
-            })
-        }          
-
-         
-
+        <Vista_prev elemento={dbProductos[0]} key={0} />
+        <Vista_prev elemento={dbProductos[1]} key={1} />
+        <Vista_prev elemento={dbProductos[2]} key={2} />
+                
       </div>
 
       <a href="entrada.html" class="boton boton--primario catalogo__inicio--boton">Catalogo Completo</a>

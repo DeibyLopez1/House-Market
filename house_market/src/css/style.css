@@ -81,8 +81,10 @@ p{
 	flex-direction: row;
 }
 .active{
-	color: var(--primario);
-	text-decoration: underline;
+	color: var(--blanco);
+	font-family: var(--playfair);
+	background: rgb(192,0,0);
+	background: linear-gradient(90deg, rgba(192,0,0,1) 30%, rgba(216,72,72,0.6194852941176471) 78%);
 }
 
 .fuente-playfair{
@@ -97,14 +99,19 @@ p{
 	color: var(--primario);
 }
 
+.img_icono{
+	width: 25px;
+	height: 25px;
+}
+
 .div__linea--separador{
-	width: 80%;
+	width: 60%;
 	height: 0px;
 	margin-left: 10%;
 	border-style: solid;
 	border-color: var(--gris);
 	border-width: 1px;
-	margin-top: 60px;
+	margin-top: 40px;
 
 }
 
@@ -365,13 +372,14 @@ p{
 }
 
 .Catalogo_inicio__contenido--card{
-	
 	display: grid;
-	grid-template-rows: 1fr 0.5fr 0.5fr;
+	grid-template-rows: 1fr 0.4fr 0.5fr;
 	background-color: var(--blanco);
 	border-radius: 10px 10px 10px 10px ;
 	width: 90%;
 	margin-left: 5%;
+	margin-top: 30px;
+	margin-bottom: 30px;
 
 }
 
@@ -381,14 +389,19 @@ p{
 }
 
 .Catalogo_inicio__contenido--card__ubicacion{
-	display: flex;
-	flex-direction: column;
 	border-bottom: solid;
 	border-radius: 0px 0px 0px 0px ;
 	border-style: solid;
 	border-width: 0.5px;
-	border-color: gray;
+	border-color: #b6b5b5;
 	text-align: center;
+}
+
+.Catalogo_inicio__contenido--card__ubicacion h4{
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 75px;
+	font-family: var(--playfair);
 }
 
 .Catalogo_inicio__contenido--card__precio-Caracteristicas{
@@ -397,14 +410,34 @@ p{
 	border-radius: 0px 0px 10px 10px;
 	border-style: solid;
 	border-width: 0.5px;
-	border-color: gray;
+	border-color: #b6b5b5;
 	text-align: center;
 }
 
 .Catalogo_inicio__contenido--card__ubicacion--ubi{
-	margin-left: 15px;
-	margin-top: 0px;
+	display: grid;
+	grid-template-columns: 0.1fr 1fr;
+	margin-left: 35px;
+	margin-top: 55px;
 	padding-top: 0px;
+	margin-right: 15px;
+	height: 25px;
+	position: absolute;
+}
+
+.Catalogo_inicio__contenido--card__ubicacion--ubi p,
+.caracteristicas-inicio-card__icono-nombre p{
+	margin-top: -3px;
+	font-weight: 600;
+	font-family: var(--playfair);
+	margin-left: 0px;
+
+}
+
+
+.caracteristicas-inicio-card__icono-nombre{
+	display: grid;
+	grid-template-columns: 0.4fr 1fr;
 }
 
 .Catalogo_inicio__contenido--card__precio-Caracteristicas--carac,
@@ -412,9 +445,27 @@ p{
 	margin-left: 15px;
 }
 
+.Catalogo_inicio__contenido--card__precio-Caracteristicas--carac{
+	margin-top: 15px;
+}
+
 .Catalogo_inicio__contenido--card__precio--precio{
 	color: var(--primario);
 	margin-left: 45px;
+}
+
+.Catalogo_inicio__contenido--card__precio--contenido{
+	position: absolute;
+	margin-top: 70px;
+}
+
+.Catalogo_inicio__contenido--card__precio--opciones a{
+	margin-left: 15px;
+}
+
+.Catalogo_inicio__contenido--card__precio--contenido h4{
+	margin-top: 8px;
+	margin-right: 105px;
 }
 
 .catalogo__inicio--boton{
@@ -558,17 +609,272 @@ p{
 /*	CSS EN FOOTER */
 
 .footer{
-	background-color: var(--secundario);
+	background-color: var(--primario);
+	height: 400px;
 }
 
 .footer-contenido{
 	display: grid;
-	grid-template-columns: 1.5fr 1fr 1fr;
+	grid-template-columns: 1.5fr 1fr;
 }
 
-/* CSS PARA EL LOGIN */
+.footer-contenido{
+	width: 90%;
+	margin-left: 5%;
+}
+
+.footer-contenido__about{
+	width: 95%;
+	margin-right: 5%;
+}
+
+.footer-contenido__categorias--opciones{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.footer-contenido__categorias--opciones p{
+	color: var(--blanco);
+}
+
+/* CSS PARA la pagina de ALL CATALOGO */
+
+.Banner_page__css{
+	background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(216,72,72,1) 49%, rgba(255,255,255,1) 100%);
+	height: 200px;
+	text-align: center;
+}
+
+.Banner_page__css--contenido{
+	padding-top: 55px;
+}
+
+.Catalogo-page-filtros{
+	width: 100%;
+	height: 150px;
+}
+
+.Catalogo-page-filtros-contenido{
+	width: 90%;
+	margin-left: 5%;
+	display: grid;
+	grid-template-columns: 0.5fr 1fr 1fr 0.5fr 0.5fr;
+}
+
+.Catalogo-page-filtros-contenido__card,
+.Catalogo-page-filtros-contenido__card--popular{
+	background-color: var(--gris);
+	text-align: center;
+	width: 93%;
+	height: 60px;
+	margin-right: 7%;
+	margin-top: 35px;
+	border-radius: 15px;
+}
+
+.Catalogo-page-filtros-contenido__card:hover ,
+.Catalogo-page-filtros-contenido__card--popular:hover{
+	background: rgb(192,0,0);
+	background: linear-gradient(90deg, rgba(192,0,0,1) 30%, rgba(216,72,72,0.6194852941176471) 78%);
+
+}
+
+.Catalogo-page-filtros-contenido__card--popular h4{
+	font-family: var(--playfair);
+	margin-top: 25px;
+}
+
+.Catalogo-page-filtros-contenido__card--popular:hover h4{
+	font-family: var(--playfair);
+	color: var(--blanco);
+}
+
+.Catalogo-page-filtros-contenido__card h4{
+	margin-top: 15px;
+	font-family: var(--playfair);	
+}
+
+.Catalogo-page-filtros-contenido__card:hover h4{
+	margin-top: 15px;
+	font-family: var(--playfair);
+	color: var(--blanco);	
+}
+
+.Catalogo-page-filtros-contenido__card p{
+	margin-top: -30px;
+	color: var(--secundario);
+	font-size: 12px;
+}
+
+.Catalogo-page-filtros-contenido__card:hover p{
+	margin-top: -30px;
+	color: var(--blanco);
+}
 
 
+.All_Catalogo-page-contenido{
+	width: 90%;
+	margin-left: 5%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	background-color: var(--gris);
+	margin-top: 15px;	
+}
+
+.Cambiar-pagina{
+	margin-top: 50px;
+	width: 300px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	text-align: center;
+	margin-left: 38%;
+	margin-bottom: 50px;
+}
+
+.Cambiar-pagina a{
+	width: 90%;
+	border-radius: 5px;
+	margin-left: 10%;
+	background-color: var(--gris);
+}
+
+.boton_cambiar-pagina:hover {
+	background-color: var(--primario);
+	color: var(--blanco);
+}
+
+/* CSS PARA LA PAGINA DE INFORMACION PRODUCTO */
+
+.Single-Producto-Contenido{
+	display: grid;
+	grid-template-columns: 1.5fr 0.7fr;
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 55px;
+}
+
+
+.Single-Producto-Contenido-col-derecha{
+	background: rgb(34,193,195);
+	background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+	width: 90%;
+	margin-left: 10%;
+}
+
+.Single-Producto-Contenido-col-derecha__form{
+	background-color: var(--blanco);
+	margin: 10px 10px 10px 10px;
+}
+
+.Single-Producto-col-derecha__form-campo{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin-left: 10%;
+}
+
+.Single-Producto-col-derecha__form-campo label{
+	color: var(--primario);
+	font-family: var(--playfair);
+	font-weight: 700;
+}
+
+.Single-Producto-col-derecha__form-campo input,
+.Single-Producto-col-derecha__form-campo textarea{
+	height: 40px;
+	border-radius: 5px;
+	background-color: var(--gris);
+	border-width: 0px;
+	margin-bottom: 25px;
+}
+
+.Single-Producto-col-derecha__form-campo textarea{
+	height: 120px;
+}
+
+.Single-Producto-Contenido-col-derecha__titulo{
+	margin-left: 45px;
+	margin-top: 20px;
+	font-family: var(--playfair);
+}
+
+.SingleP-col-izquierda-galeria__portada{
+	border-radius: 50px;
+	overflow: hidden;
+}
+
+.SingleP-col-izquierda-galeria__vistaprev{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	margin-top: 25px;
+}
+
+.SingleP-col-izquierda-informacion__descripcion--nombre h2{
+	font-family: var(--playfair);
+}
+
+.SingleP-col-izquierda-informacion__descripcion--nombre p{
+	font-weight: 700;	
+}
+
+.SingleP-col-izquierda-informacion__descripcion p{
+	color: gray;
+	font-size: 20px;
+}
+
+.SingleP-col-izq-informacion__detallesPrecio p,
+.SingleP-col-izq-informacion__detallesPropiedad p{
+	color: gray;
+}
+
+.SingleP-col-izq-informacion__descripcionGeneral{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+}
+
+.SingleP-col-izq-informacion__descripcionGeneral--card{
+	background-color: var(--gris);
+	border-radius: 10px;
+	display: grid;
+	grid-template-columns: 1fr 0.5fr;
+	text-align: center;
+	justify-content: center;
+	justify-items: center;
+}
+
+.SingleP-col-izq-informacion__caracteristicasInteriores{
+	display: grid;
+	grid-template-columns: 1fr 0.5fr;
+	width: 70%;
+}
+
+/* css para pagina de ERROR 404 */
+
+.Erro_404_page{
+	background: rgb(34,193,195);
+	background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(192,0,0,1) 100%);
+	height: 500px;
+	text-align: center;
+}
+
+.Erro_404_page--info{
+	padding-top: 120px;
+}
+
+.Erro_404_page--info h1,
+.Erro_404_page--info h4{
+	font-family: var(--playfair);
+	color: var(--blanco);
+}
+
+.boton_page_error{
+	margin-top: 60px;
+	margin-left: 530px;
+	width: 280px;
+}
 
 
 /* FIN CSS LOGIN */

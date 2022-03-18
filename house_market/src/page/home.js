@@ -10,6 +10,7 @@ import { Direccion_empresa } from '../components/nosotros/Direccion_empresa'
 export const Home = () => {
   return (
    <>
+
         <Header />
 
         <div className="Banner_inicio">
@@ -23,6 +24,7 @@ export const Home = () => {
 
         <FormBuscar />
         <Nosotros />
+
         <Catalogo_inicio />
 
         <div className="Banner-inicio-contacto">
@@ -39,11 +41,13 @@ export const Home = () => {
             </div>
         </div>
 
+   
         <Galeria_Inicio />
 
        <Direccion_empresa /> 
 
         <Footer />
+
    </>
   )
 }

@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './css/style.css';
 import reportWebVitals from './reportWebVitals';
 import { Home } from './page/home';
+import { All_catalogo } from './page/all_catalogo';
+import { Single_producto } from './page/Single_producto';
+import { Error_404 } from './page/Error_404';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <Error_404 />
   </React.StrictMode>,
   document.getElementById('root')
 );
