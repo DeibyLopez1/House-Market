@@ -6,20 +6,14 @@ import { FormBuscar } from '../components/contacts/FormBuscar'
 import { Galeria_Inicio } from '../components/home/Galeria_Inicio'
 import { Nosotros } from '../components/home/Nosotros'
 import { Direccion_empresa } from '../components/nosotros/Direccion_empresa'
+import { Banner_page } from '../components/vistas/Banner_page'
 
 export const Contacts = () => {
   return (
    <>
         <Header />
 
-        <div className="Banner_contacto">
-            <div className="Banner_inicio__contacto padding">
-                
-                <h1>Contacto</h1>
-
-             
-            </div>
-        </div>
+        <Banner_page Page={"Contacto"} />
 
         <Direccion_empresa /> 
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import LOGO from '../../data/img/HOUSE_MARKET_logo.png'
+import { Outlet, Link } from "react-router-dom";
 
 export const Header = () => {
   return (
@@ -57,13 +58,14 @@ export const Header = () => {
 
                   <div className="header-filtros">
 
-                      <a href="">INICIO</a>
-                      <a href="">CASAS</a>
-                      <a href="">APARTAMENTOS</a>
-                      <a href="">SOBRE NOSOTROS</a>
-                      <a href="">CONTACTO</a>
-                      <a href="">GALERIA</a>
-                      <a href="">BLOG</a>
+                       <Link to="/">INICIO</Link>
+                        <Link to="/Allcatalogo">CASAS</Link>
+                        <Link to="/Allcatalogo">APARTAMENTOS</Link>
+                        <Link to="/">SOBRE NOSOTROS</Link>
+                        <Link to="/contacto">CONTACTO</Link>
+                        <Link to="/galeria">GALERIA</Link>
+                        <Link to="/">BLOG</Link>
+
 
                   </div>
 
