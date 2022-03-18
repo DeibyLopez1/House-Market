@@ -250,6 +250,34 @@ p{
 	margin-top: 20px;
 }
 
+/*BANNER CONTACTO*/
+.Banner_contacto{
+	background-image: radial-gradient(circle at 17.13% 52.88%, #e27600 0, #e86700 12.5%, #ec5400 25%, #ef3c00 37.5%, #f11010 50%, #f1001f 62.5%, #f1002b 75%, #ef0038 87.5%, #ec0045 100%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 200px;
+	width: 100%;
+	text-align: center;
+}
+
+.Banner_inicio__contacto{
+	padding-top: 45px;
+}
+
+.Banner_inicio__contacto h1,
+.Banner_inicio__contacto h4{
+	color: var(--blanco);
+	font-family: 'Playfair';
+	padding: 0px;
+}
+.Banner_inicio__contacto h1{
+	font-size: 70px;
+}
+
+.Banner_inicio__contacto a{
+	margin-left: 300px;
+	margin-top: 20px;
+}
 /* BUSCAR POR FILTROS INICIO  */
 .buscarXfiltros{
 	background-color: var(--gris);
