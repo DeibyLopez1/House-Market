@@ -18,6 +18,7 @@ export const Rutas = () => {
       <Route path="contacto" element={<Contacts />} />
       <Route path="error404" element={<Error_404 />} />
       <Route path="infoProducto" element={<Single_producto />} />
+      <Route path="*" element={<Error_404 />} />
     </Routes>
   )
 }

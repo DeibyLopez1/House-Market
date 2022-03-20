@@ -878,3 +878,57 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(216,72,72,1) 49%
 
 
 /* FIN CSS LOGIN */
+
+.inputIngreso{
+	height: 35px;
+	width:100% ;
+	font-size: 18px;
+	border-radius: 10px;
+  margin-bottom: 0px;
+  border: 0;
+}
+
+.inputIngreso:focus {
+	background-color:#FFEBCD;
+	border: 0;
+	
+	}
+
+.inputIngresoLinea{
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.titulosIngreso{
+	margin-bottom: 10px;
+	color: #C12524;
+	font-family: var(--fuenteHeading);
+	font-size: 20px;
+}
+
+.botonEntrarLogin{
+	background-color:#C12524;
+	color: #ffffff;
+	width:100% ;
+	font-size: large;
+	border-radius: 10px;
+	border-width: 0.5px;
+	
+	margin-top: 30px;
+	height: 35px;
+}
+
+.passOlvidada{
+	margin-top:0;
+	margin-bottom:20px; 
+	text-align:center;
+	font-size: 15px;
+	
+}
+
+.passOlvidada2{
+	margin-top:30px;
+	margin-bottom:20px; 
+	text-align:center;
+	font-size: 10px;
+}
