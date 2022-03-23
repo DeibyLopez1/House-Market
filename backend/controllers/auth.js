@@ -3,10 +3,13 @@ const bcrypt = require("bcryptjs");
 const Usuario = require("../models/Usuario");
 const { generarJWT } = require("../helpers/jwt");
 
+
 const crearUsuario = async (req, res = response) => {
+  
   const { correo, contrasenia } = req.body;
 
   try {
+    
     let usuario = await Usuario.findOne({ correo });
 
     if (usuario) {
@@ -17,7 +20,9 @@ const crearUsuario = async (req, res = response) => {
     }
 
     usuario = new Usuario(req.body);
+
     console.log(usuario);
+
     // Encriptar contraseña
     const salt = bcrypt.genSaltSync();
     usuario.contrasenia = bcrypt.hashSync(contrasenia, salt);
@@ -33,6 +38,7 @@ const crearUsuario = async (req, res = response) => {
       name: usuario.correo,
       token,
     });
+
   } catch (error) {
     console.log(error);
     res.status(500).json({
@@ -42,10 +48,12 @@ const crearUsuario = async (req, res = response) => {
   }
 };
 
+
 const loginUsuario = async (req, res = response) => {
   const { correo, contrasenia } = req.body;
 
   try {
+
     const usuario = await Usuario.findOne({ correo });
 
     if (!usuario) {
@@ -74,6 +82,7 @@ const loginUsuario = async (req, res = response) => {
       name: usuario.correo,
       token,
     });
+
   } catch (error) {
     console.log(error);
     res.status(500).json({
@@ -84,6 +93,7 @@ const loginUsuario = async (req, res = response) => {
 };
 
 const revalidarToken = async (req, res = response) => {
+  
   const { uid, name } = req;
 
   // Generar JWT
@@ -95,9 +105,11 @@ const revalidarToken = async (req, res = response) => {
     name,
     token,
   });
+
 };
 
 const cambiarContrasenia = async (req, res = response) => {
+  
   const { uid, contrasenia } = req.body;
 
   try {

@@ -9,15 +9,19 @@ import { All_catalogo } from '../page/all_catalogo';
 import { Contacts } from '../page/contacts';
 import { Error_404 } from '../page/Error_404';
 import { Single_producto } from '../page/Single_producto';
+import { Login_Page } from '../page/Login_Page';
+import { Registro_Page } from '../page/Registro_Page';
 
 export const Rutas = () => {
   return (
      <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="Allcatalogo" element={<All_catalogo />} />
+      <Route path="allcatalogo" element={<All_catalogo />} />
       <Route path="contacto" element={<Contacts />} />
       <Route path="error404" element={<Error_404 />} />
       <Route path="infoProducto" element={<Single_producto />} />
+      <Route path="login" element={<Login_Page />} />
+      <Route path="registro" element={<Registro_Page />} />
       <Route path="*" element={<Error_404 />} />
     </Routes>
   )

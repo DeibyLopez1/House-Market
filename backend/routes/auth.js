@@ -19,10 +19,8 @@ router.post(
   "/new",
   [
     // middlewares
-    check("nombre", "El nombre es obligatorio").not().isEmpty(),
-    check("apellido", "El apellido es obligatorio").not().isEmpty(),
+    check("nombre", "El nombre es obligatorio").not().isEmpty(),   
     check("correo", "El correo es obligatorio").isEmail(),
-    check("telefono", "El telefono es obligatorio").not().isEmpty(),
     check(
       "contrasenia",
       "La Contrasenia debe de ser de 6 o mas caracteres"
