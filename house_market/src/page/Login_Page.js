@@ -21,9 +21,10 @@ export const Login_Page = () => {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        console.log("er")
+            console.log("er")
         dispatch(startLogin(email,password))
-         console.log("Faker")
+            console.log("Faker")
+        
     }
     
   

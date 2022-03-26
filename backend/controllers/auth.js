@@ -30,12 +30,13 @@ const crearUsuario = async (req, res = response) => {
     await usuario.save();
 
     // Generar JWT
-    const token = await generarJWT(usuario.id, usuario.correo);
+    const token = await generarJWT(usuario.id, usuario.correo, usuario.nombre);
 
     res.status(201).json({
       ok: true,
       uid: usuario.id,
       name: usuario.correo,
+      usero: usuario.nombre,
       token,
     });
 
@@ -74,14 +75,16 @@ const loginUsuario = async (req, res = response) => {
     }
 
     // Generar JWT
-    const token = await generarJWT(usuario.id, usuario.correo);
-
+    const token = await generarJWT(usuario.id, usuario.correo, usuario.nombre);
+     
     res.json({
       ok: true,
       uid: usuario.id,
       name: usuario.correo,
+      usero: usuario.nombre,
       token,
     });
+    console.log(res.json);
 
   } catch (error) {
     console.log(error);
@@ -94,15 +97,16 @@ const loginUsuario = async (req, res = response) => {
 
 const revalidarToken = async (req, res = response) => {
   
-  const { uid, name } = req;
+  const { uid, name, usero } = req;
 
   // Generar JWT
-  const token = await generarJWT(uid, name);
+  const token = await generarJWT(uid, name, usero);
 
   res.json({
     ok: true,
     uid,
     name,
+    usero,
     token,
   });
 

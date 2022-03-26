@@ -210,6 +210,12 @@ p{
 	margin-bottom: 0px;
 }
 
+.header2{
+	background-color: var(--primario);
+	height: 80px;
+	margin-bottom: 0px;
+}
+
 .header-contenedor{
 	display: flex;
 	flex-direction: column;
@@ -240,10 +246,22 @@ p{
 .header-informacion__opciones--login, 
 .header-informacion__opciones--buscarIcon{
 	margin-top: 20px;
+
+}
+
+.header-informacion__opciones--buscarIcon2{
+	margin-top: 20px;
+	left: auto;
+	
 }
 
 .header-informacion__opciones--login a{
 	color: var(--blanco);
+}
+
+.hi{
+	margin-right: 50px;
+ 
 }
 
 .header-filtros{
@@ -830,6 +848,10 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(216,72,72,1) 49%
 	font-family: var(--playfair);
 }
 
+.col-3{
+	width: 25%;
+}
+
 .SingleP-col-izquierda-galeria__portada{
 	border-radius: 50px;
 	overflow: hidden;
@@ -968,4 +990,152 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(216,72,72,1) 49%
     justify-content: center;
     margin-bottom: 10px;
     padding: 5px
+}
+
+/*Dise;o de botones para seccion de menu*/
+
+.secciones{
+	font-size: 20px;
+	border: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.hreditado{
+	margin: 0%;
+	padding: 0%;
+}
+
+.menuMargen{
+	border-right:solid grey ;
+
+}
+
+.menuMargen2{
+	padding-top: 3%;
+}
+
+.lineas{
+	
+	float: left
+}
+
+.cajaSvg{
+	width: 100%;
+}
+
+.imagenLogos{
+	width: 55px;
+	height: 50px;
+	margin-right: 15px;
+	float: left;
+}
+
+.imagenLogos2{
+	width: 30px;
+	height: 50px;
+	margin-right: 15px;
+	float: left;
+	padding: 0;
+}
+
+.botonAgregar{
+	height: 40px;
+	width: 150px;
+	background: rgb(88, 163, 13);
+	font-size: large;
+	border-radius: 10px;
+	color: white;
+	border: #edede9;
+	
+
+}
+
+.linkBotones{
+	color:white;
+	height: 40px;
+	font-size: large;
+	border-radius: 10px;
+}
+
+.linkBotones :hover{
+	color:rgb(65, 247, 28);
+	
+}
+
+.loginYRegistro{
+	float: left;
+	margin-right: 40px;
+	font-size: 20px;
+}
+
+
+.padding1{
+	padding: 10px;
+}
+
+/*css cartillas de publicacion de usuario logeado*/
+.ContenedorCartillasPublicacion{
+	background: rgba(135, 206, 250, 0.466);
+	min-height: 50px;
+	width:100%;
+	border-radius: 7px;
+	margin-bottom: 25px;
+	padding: 2px;
+	padding-left: 8px;
+}
+
+.col-9{
+	width: 75%;
+}
+
+.infoUsuario{
+	
+	min-height: 50px;
+	width:100%;
+	border-radius: 7px;
+}
+
+
+.col-15{
+	width: 15%;
+	margin-right: 20px;
+}
+
+.col-85{
+	width: 78%;
+}
+
+.rectangulo1{
+	width: 100%;
+	min-height:45px ;
+	margin:5px ;
+	padding: 5px;
+	justify-content: center;
+	align-items: center;
+  display: flex;
+}
+
+.rectangulo2{
+	width: 100%;
+	min-height:45px ;
+	margin:5px ;
+	padding: 5px;
+	
+}
+
+
+.informacionRegistro{
+	font-size: 12px;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.col-50{
+	width: 50%;
+	min-height: 20px;
+	padding-left: 10px;
+}
+
+.letrasEnlace{
+	color: fuchsia;
 }
