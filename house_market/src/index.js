@@ -3,11 +3,8 @@ import ReactDOM from 'react-dom';
 import './css/style.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom'
-import { Home } from './page/home';
-import { All_catalogo } from './page/all_catalogo';
-import { Single_producto } from './page/Single_producto';
-import { Error_404 } from './page/Error_404';
 import App from './App';
+
 
 ReactDOM.render(
   <React.StrictMode>

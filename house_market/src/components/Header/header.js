@@ -46,8 +46,13 @@ export const Header = () => {
                           </div>
 
                           <div className="header-informacion__opciones--login">
+<<<<<<< Updated upstream
                           <div className='loginYRegistro'><Link to="/login">Login   </Link></div>
                           <dvi className='loginYRegistro'><Link to="/registro">registro</Link></dvi>
+=======
+                             <Link to="/login">LOGIN</Link>
+                             <Link to="/registro" className='marg-left-15'>REGISTRO</Link>
+>>>>>>> Stashed changes
                           </div>
                           <div className="header-informacion__opciones--buscarIcon">
                               <a href="">

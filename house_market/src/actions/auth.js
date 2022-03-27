@@ -7,7 +7,7 @@ import { startLoading, finishLoading } from './ui';
 
 export const startLogin =  (correo, contrasenia) => {
   return async (dispatch) => {
-    console.log("Ded")
+
     const resp = await fetchSinToken("auth/", { correo, contrasenia }, "POST");
     console.log(resp)
     const body = await resp.json();
@@ -46,7 +46,7 @@ export const login = (uid, displayName) => ({
 
 export const registroUsuario = (nombre, correo, contrasenia) => {
     return async (dispatch) => {
-        console.log(nombre, correo, contrasenia)
+        
         const resp = await fetchSinToken(
             "auth/new",
             { nombre, correo, contrasenia},
@@ -54,7 +54,7 @@ export const registroUsuario = (nombre, correo, contrasenia) => {
         );
         console.log(resp)
         const body = await resp.json();
-
+          console.log(body)
         if (body.ok) {
             localStorage.setItem("token", body.token);
             localStorage.setItem("token-init-date", new Date().getTime());
