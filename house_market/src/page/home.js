@@ -1,4 +1,4 @@
-import React from 'react'
+ import React from 'react'
 import { Footer } from '../components/Footer/footer'
 import { Header } from '../components/Header/header'
 import { Catalogo_inicio } from '../components/home/Catalogo_inicio'
@@ -10,8 +10,7 @@ import { Direccion_empresa } from '../components/nosotros/Direccion_empresa'
 export const Home = () => {
   return (
    <>
-
-        <Header />
+      <Header />
 
         <div className="Banner_inicio">
             <div className="Banner_inicio__informacion no-padding">
@@ -23,7 +22,14 @@ export const Home = () => {
         </div>
 
         <FormBuscar />
+    
+
+
         <Nosotros />
+
+
+
+
 
         <Catalogo_inicio />
 
