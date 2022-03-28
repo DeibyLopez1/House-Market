@@ -7,14 +7,11 @@ import { Error_404 } from '../page/Error_404';
 import { Single_producto } from '../page/Single_producto';
 import { Login_Page } from '../page/Login_Page';
 import { Registro_Page } from '../page/Registro_Page';
-<<<<<<< Updated upstream
 import { Pag_user } from '../page/pag_user';
+import { Dashboard } from '../admin/dashboard'
 
 
 const token = localStorage.getItem('token');
-=======
-import { Dashboard } from '../admin/dashboard';
->>>>>>> Stashed changes
 
 export const Rutas = () => {
   return (
@@ -30,7 +27,7 @@ export const Rutas = () => {
       <Route path="admin/dasboard" element={<Dashboard />} />
       <Route path="*" element={<Error_404 />} />
       <Route path="pag_user" element={<Pag_user />} />
-      }} />
+      
     </Routes>
     
         
