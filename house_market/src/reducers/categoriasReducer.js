@@ -5,11 +5,16 @@ export const catgReducer = ( state = {}, action ) => {
     switch ( action.type ) {
         
         case types.showCategorias:
-            console.log(action.payload)
             return {
+                ...state,
                 data: action.payload
             }
-            
+
+        case types.namesCategorias:
+            return {
+                ...state,
+                names: action.names
+            }
         default:
             return state;
     }

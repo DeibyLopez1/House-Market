@@ -1107,8 +1107,11 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(216,72,72,1) 49%
     padding: 5px
 }
 
+<<<<<<< Updated upstream
 /*Dise;o de botones para seccion de menu*/
 
+=======
+>>>>>>> Stashed changes
 .secciones{
 	font-size: 20px;
 	border: none;
@@ -1253,4 +1256,21 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(216,72,72,1) 49%
 
 .letrasEnlace{
 	color: fuchsia;
+<<<<<<< Updated upstream
+=======
+}
+/* OPCION DE CATEGORIA EN DIV */
+
+.opc_categoria_view{
+	margin-top: 10px;
+}
+
+.opc_categoria_view p{
+	margin-left: 15px;
+	font-size: 18px;
+	font-weight: 500;
+	font-family: var(--playfair);
+	color: var(--negro);
+
+>>>>>>> Stashed changes
 }
