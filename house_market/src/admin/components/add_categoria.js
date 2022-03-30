@@ -11,31 +11,16 @@ export const Add_categoria = () => {
     const dispatch = useDispatch();
     const { loading } = useSelector( state => state.ui );
     const { data } = useSelector( state => state.catg );
+    const { names } = useSelector( state => state.catg );
     const [checking, setChecking] = useState(true);
-    const areas = [];
-    const nombre_areas = [];
-    let count = 0;
+    const [ActiveArea, setActiveArea] = useState(0);
+    
 
   //  console.log(data)
 
     useEffect(() => {
         
-        data.map( (categoria) => {
-           
-            areas.push(categoria.area)
-           
-        })
-
         setTimeout(() => {
-            
-            areas.map((nombre) => {
-                
-                if(areas[count] !== areas[count+1]){
-                    nombre_areas.push(areas[count])
-                   
-                }
-                count++
-            })
             setChecking(false)       
         }, 3000);
         
@@ -60,15 +45,24 @@ export const Add_categoria = () => {
         
     }
 
-    setTimeout(() => {
-        console.log(nombre_areas)
-        console.log(areas)
-        
-    }, 500);
+    const verificarArea = (actual) => {
 
-    
+        if( ActiveArea === actual){  
+            return "option_categoria_LI opc_active"
+        }else{
+            return "option_categoria_LI"
+        }
 
-    if (checking && !loading) {
+    };
+
+    const imprimir = (e) =>{
+        e.preventDefault();
+        const index = e.target
+        const strin1 = index.split(' ')
+        console.log(strin1)
+    }
+
+    if (checking) {
         return (
             <div className="cargando">
                 <div class="preloader"></div>
@@ -78,11 +72,7 @@ export const Add_categoria = () => {
 
         )
     }
-
-   
-    console.log(nombre_areas)
-    console.log(areas)
-    console.log(data)
+    
 
   return (
      <div>
@@ -147,28 +137,16 @@ export const Add_categoria = () => {
         <div className='div_opc_categorias'>
 
            
-            <ul className='contenedor_opc_categoria'>
-
+            <select class="form-select" size="3" aria-label="size 3 select example">
+                
                 {
-                    data.map( (nombre) =>{
-                        return <li className='option_categoria_LI'> <Opc_categoria opcion={ nombre.area } /> </li>
+                    names.map( ( nombreCATG, index ) => {
+                        return <option value={index}>{nombreCATG}</option>
                     })
-                   
-                    
                 }
-   
-                   
-            </ul>            
-            <ul className='contenedor_opc_categoria'>
-                   
-               
-            </ul>            
-            <ul className='contenedor_opc_categoria'>
-                 
-                   
-            </ul>            
-
-           
+                
+                
+            </select>            
            
 
 

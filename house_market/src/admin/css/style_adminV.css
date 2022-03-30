@@ -114,12 +114,26 @@
     display: list-item;
     white-space: nowrap;
     user-select: none;
-
 }
+
+.option_categoria_LI:focus{
+    background-color: #33DFAC;
+   
+}
+
+.option_categoria_LI::selection{
+ background-color: #33DFAC;
+}
+
+
 
 .opc_active{
     background-color: var(--primario);
     
+}
+
+.option_categoria_LI:scope{
+    background-color: aquamarine;
 }
 
 .opc_active p{

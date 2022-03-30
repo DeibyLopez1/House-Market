@@ -310,7 +310,7 @@ p{
 
 /*BANNER CONTACTO*/
 .Banner_contacto{
-	background-image: radial-gradient(circle at 17.13% 52.88%, #e27600 0, #e86700 12.5%, #ec5400 25%, #ef3c00 37.5%, #f11010 50%, #f1001f 62.5%, #f1002b 75%, #ef0038 87.5%, #ec0045 100%);
+	background-image: radial-gradient(circle at 17.13% 52.88%, #e27600 0, #e86700 12.5%, #ec5400 25%, #ef3c00 37.5%, #f11010 50%, #f1001f 62.5%, #f1002b 75%, #ef0038 87.5%, #ec0045 65%);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 200px;
@@ -336,6 +336,119 @@ p{
 	margin-left: 300px;
 	margin-top: 20px;
 }
+
+.Formulario-contacto{
+	display: grid;
+  	grid-template-columns: repeat(2, 1fr);
+  	grid-gap: 10px;
+  	grid-auto-rows: 100px;
+}
+
+.Contactanos{
+	font-size: 25px;
+	font-family: 'Playfair';
+	background-color: var(--blanco);
+}
+
+.MapsContacto{
+	display: row;
+	text-align: center;
+	color: var(--primario);
+	font-size: 30px;
+	font-family: 'Playfair';
+}
+
+.Direccion-empresa-contacto{
+	display: row;
+	text-align: left;
+	color: var(--primario);
+	font-size: 30px;
+	font-family: 'Playfair';
+}
+
+.Direccion-empresa-contacto-info{
+	padding-top: 10px;
+	text-align: center;
+}
+.Empresa-contacto-Pregunta{
+	display: row;
+	text-align: center;
+	color: var(--primario);
+	font-size: 30px;
+	font-family: 'Playfair';
+	border-style: solid;
+	border-color: var(--blanco);
+	width: 100%;
+	
+}
+
+.Direccion-empresa-contenido-contacto{
+	display: grid;
+	grid-template-columns: 1.5fr 2fr 1.5fr 2fr;
+	width: 100%;
+	margin-top: 0%;
+	border-style: solid;
+	border-color: var(--blanco);
+}
+
+.Direccion-empresa-fondo{
+	background-color: var(--blanco);
+	display: flex;
+	flex-direction: column;
+	height: 450px;
+}
+
+.breadcrumb-area{
+	text-align: center
+}
+
+.boton-enviar{
+	text-decoration:none;
+font-weight: 600;
+font-size: 20px;
+color:#333333;
+padding-top:15px;
+padding-bottom:15px;
+padding-left:40px;
+padding-right:40px;
+border-radius:35px;
+}
+
+.contacto-enviar-boton{
+	margin-left: transparent;
+	width: 320px;
+}
+
+.boton-secundario-enviar{
+	color: var(--primario);
+	background-color: var(--gradient);
+	
+}
+.ol{
+	text-align : center;
+	border:solid;
+}
+	
+.li{
+	color: var(--primario);
+	display: inline;
+	padding: 10px 16px;
+	text-decoration: center;
+}
+	
+.li2:before {
+	padding: 8px;
+	color: var(--primario);
+	content:"/";
+}
+	
+.nav1{
+	background-color:lime;
+	height : 20px;
+	width : 100%;
+}
+	
+
 /* BUSCAR POR FILTROS INICIO  */
 .buscarXfiltros{
 	background-color: var(--gris);
@@ -998,6 +1111,8 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(216,72,72,1) 49%
 <<<<<<< Updated upstream
 /*Dise;o de botones para seccion de menu*/
 
+=======
+>>>>>>> Stashed changes
 .secciones{
 	font-size: 20px;
 	border: none;
@@ -1142,7 +1257,9 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(216,72,72,1) 49%
 
 .letrasEnlace{
 	color: fuchsia;
+<<<<<<< Updated upstream
 =======
+}
 /* OPCION DE CATEGORIA EN DIV */
 
 .opc_categoria_view{
@@ -1155,5 +1272,6 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(216,72,72,1) 49%
 	font-weight: 500;
 	font-family: var(--playfair);
 	color: var(--negro);
+
 >>>>>>> Stashed changes
 }

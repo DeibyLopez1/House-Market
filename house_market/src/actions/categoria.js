@@ -17,6 +17,7 @@ export const obtenerCategorias = () => {
         if (body.ok) {
             console.log( body.categorias )
             dispatch( categorias( body.categorias ) )
+            dispatch( namesCategorias( body.categorias ))
         } else {
             // Swal.fire("Error", body.msg, "error");
             console.Console("error", body.msg);
@@ -24,8 +25,43 @@ export const obtenerCategorias = () => {
   };
 };
 
+export const namesCategorias = ( dataNames ) => {
+    return async (dispatch) => {   
+        const areas = [];
+        const nombre_areas = [];
+        let count = 0;
+
+        dataNames.map( (categoria) => {
+           
+            areas.push(categoria.area)
+           
+        })
+
+        setTimeout(() => {
+            
+            areas.map((nombre) => {
+                
+                if(areas[count] !== areas[count+1]){
+                    nombre_areas.push(areas[count])
+                   
+                }
+                count++
+            })
+
+            dispatch(namesCategoriasRedux(nombre_areas))
+
+        }, 3000);
+    }
+}
+
+export const namesCategoriasRedux = (names) => {
+    return ({
+        type: types.namesCategorias,
+        names: names
+    })
+}
+
 export const categorias = ( data ) => {
-    console.log(data)
     return ({type: types.showCategorias,
     payload: data})
 };

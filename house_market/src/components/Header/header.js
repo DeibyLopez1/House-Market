@@ -50,8 +50,8 @@ export const Header = () => {
                           <div className='loginYRegistro'><Link to="/login">Login   </Link></div>
                           <dvi className='loginYRegistro'><Link to="/registro">registro</Link></dvi>
 =======
-                             <Link to="/login">LOGIN</Link>
-                             <Link to="/registro" className='marg-left-15'>REGISTRO</Link>
+                            <div className='loginYRegistro'><Link to="/login">Login   </Link></div>
+                            <dvi className='loginYRegistro'><Link to="/registro">registro</Link></dvi>
 >>>>>>> Stashed changes
                           </div>
                           <div className="header-informacion__opciones--buscarIcon">
