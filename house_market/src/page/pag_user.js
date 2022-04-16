@@ -19,7 +19,7 @@ export const Pag_user = () => {
       <Header_Logeado />
         <br></br>
         <hr className="hreditado"></hr>
-        <div className="container-fluid p-0">
+        <div className=" p-0">
           <div className="row">
             <div className="col-3 menuMargen">
                 <MenuLateral></MenuLateral>
