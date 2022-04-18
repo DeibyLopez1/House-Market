@@ -39,16 +39,13 @@ export const namesCategorias = ( dataNames ) => {
 
         setTimeout(() => {
             
-            areas.map((nombre) => {
-                
-                if(areas[count] !== areas[count+1]){
-                    nombre_areas.push(areas[count])
-                   
-                }
-                count++
-            })
+   
+            let result = areas.filter((item,index)=>{
+                return areas.indexOf(item) === index;
+                })
+            
 
-            dispatch(namesCategoriasRedux(nombre_areas))
+            dispatch(namesCategoriasRedux(result))
 
         }, 3000);
     }

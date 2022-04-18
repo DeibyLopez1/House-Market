@@ -185,10 +185,6 @@ p{
 	outline: none;
 }
 
-.btn:hover{
-
-}
-
 
 .btn-primary {
     background-color: var(--primario);
@@ -265,6 +261,11 @@ p{
 	margin-right: 50px;
  
 }
+
+.header-informacion__opciones--contacto__redesSociales a{
+	margin-left: 25px;
+}
+
 
 .header-filtros{
 	display: grid;
@@ -1111,7 +1112,10 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(216,72,72,1) 49%
 
 /*Dise;o de botones para seccion de menu*/
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .secciones{
 	font-size: 20px;
 	border: none;
@@ -1256,7 +1260,10 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(216,72,72,1) 49%
 
 .letrasEnlace{
 	color: fuchsia;
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 }
 /* OPCION DE CATEGORIA EN DIV */
 

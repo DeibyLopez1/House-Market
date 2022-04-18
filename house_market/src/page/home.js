@@ -1,4 +1,9 @@
+<<<<<<< Updated upstream
  import React from 'react'
+=======
+import React from 'react'
+import { Outlet, Link } from "react-router-dom";
+>>>>>>> Stashed changes
 import { Footer } from '../components/Footer/footer'
 import { Header } from '../components/Header/header'
 import { Catalogo_inicio } from '../components/home/Catalogo_inicio'
@@ -17,7 +22,7 @@ export const Home = () => {
                 <h4>Ofrecerte un buen servicio es nuestra pasión</h4>
                 <h1>Busca tu nuevo hogar AQUI</h1>
 
-                <a href="entrada.html" className="boton boton--secundario informacion-Blog__boton">Ver Catálogo</a>
+                <Link to="/allcatalogo" className="boton boton--secundario informacion-Blog__boton">Ver Catálogo</Link>
             </div>
         </div>
 

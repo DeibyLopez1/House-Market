@@ -77,16 +77,38 @@
 }
 
 .formularioScreen{
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 5%;
     margin-top: 40px;
 }
 
-.div_opc_categorias{
-   
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.preloader {
+  width: 70px;
+  height: 70px;
+  border: 10px solid var(--primario);
+  border-top: 10px solid rgb(80, 78, 78);
+  border-radius: 50%;
+  animation-name: girar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.cargando{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 250px;
+    
 }
 
 .contenedor_opc_categoria{
@@ -140,4 +162,36 @@
     color: var(--blanco);
 }
 
+.add_categoria_screen{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    
+}
 
+.add_categoria-cat{   
+    width: 80%;
+    margin-left: 60px;
+}
+
+.form-select__add-catg{
+   background: white;
+     border: solid;
+     border-width: 0.5px;
+     font-size: 14px;
+     height: 130px;
+     padding: 5px;
+     width: 250px;
+}
+
+.form-select__add-catg option{
+    font-family: var(--playfair);
+    font-size: 18px;
+    margin-left: 10px;
+    color: grey;
+}
+
+.add_producto-cat{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+}

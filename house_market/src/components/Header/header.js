@@ -46,11 +46,16 @@ export const Header = () => {
                           </div>
 
                           <div className="header-informacion__opciones--login">
+<<<<<<< Updated upstream
                           
 
                             <div className='loginYRegistro'><Link to="/login">Login   </Link></div>
                             <dvi className='loginYRegistro'><Link to="/registro">registro</Link></dvi>
 
+=======
+                          <div className='loginYRegistro'><Link to="/login">LOGIN</Link></div>
+                          <dvi className='loginYRegistro'><Link to="/registro">REGISTRO</Link></dvi>
+>>>>>>> Stashed changes
                           </div>
                           <div className="header-informacion__opciones--buscarIcon">
                               <a href="">
@@ -68,8 +73,8 @@ export const Header = () => {
                   <div className="header-filtros">
 
                        <Link to="/">INICIO</Link>
-                        <Link to="/Allcatalogo">CASAS</Link>
-                        <Link to="/Allcatalogo">APARTAMENTOS</Link>
+                        <Link to="/Allcatalogo">CATALOGO</Link>
+                        <Link to="/Allcatalogo">ALQUILER</Link>
                         <Link to="/pag_user">SOBRE NOSOTROS</Link>
                         <Link to="/contacto">CONTACTO</Link>
                         <Link to="/galeria">GALERIA</Link>

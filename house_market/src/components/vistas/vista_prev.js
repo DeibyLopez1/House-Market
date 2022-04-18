@@ -4,10 +4,17 @@ import Icon_cuartos from "../../data/img/iconos/icons8-cama-25.png";
 import Icon_baños from "../../data/img/iconos/icons8-bañera-25.png";
 import Icon_compartir from "../../data/img/iconos/icons8-compartir-25.png";
 import Icon_favorito from "../../data/img/iconos/icons8-estrella-25.png";
+import { useNavigate } from 'react-router-dom';
 
 export const Vista_prev = ({elemento}) => {
+    const navigate = useNavigate()
+    
+    const navegarSingle = () => {
+        navigate('/infoProducto')
+    }
+
   return (
-        <div className="Catalogo_inicio__contenido--card"> 
+        <div className="Catalogo_inicio__contenido--card" onClick={navegarSingle}> 
                 
                 <div className="Catalogo_inicio__contenido--card__img">
                     <img src={elemento.img} height="100%" width="100%" alt="FOTO CARD"></img>

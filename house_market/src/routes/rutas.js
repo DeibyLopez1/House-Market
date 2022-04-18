@@ -11,6 +11,7 @@ import { Pag_user } from '../page/pag_user';
 import { Dashboard } from '../admin/dashboard'
 
 
+<<<<<<< Updated upstream
 
 const token = localStorage.getItem('token');
 
@@ -18,6 +19,8 @@ const token = localStorage.getItem('token');
 
 
 
+=======
+>>>>>>> Stashed changes
 export const Rutas = () => {
   return (
      <Routes>
