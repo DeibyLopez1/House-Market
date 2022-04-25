@@ -9,18 +9,11 @@ import { Login_Page } from '../page/Login_Page';
 import { Registro_Page } from '../page/Registro_Page';
 import { Pag_user } from '../page/pag_user';
 import { Dashboard } from '../admin/dashboard'
+import { PORTAFOLIO } from '../components/Galeria/PORTAFOLIO'; 
 
-
-<<<<<<< Updated upstream
 
 const token = localStorage.getItem('token');
 
-
-
-
-
-=======
->>>>>>> Stashed changes
 export const Rutas = () => {
   return (
      <Routes>
@@ -35,6 +28,7 @@ export const Rutas = () => {
       <Route path="admin/dasboard" element={<Dashboard />} />
       <Route path="*" element={<Error_404 />} />
       <Route path="pag_user" element={<Pag_user />} />
+      <Route path="PORTAFOLIO" element={<PORTAFOLIO />} />
 
     </Routes>
 
